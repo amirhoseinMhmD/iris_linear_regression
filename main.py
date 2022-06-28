@@ -47,7 +47,7 @@ def linear_regression():
 
     for i in dictionary.keys():
         print(dictionary[i])
-        separate_dataset[i] = separate_dataset[i].replace([dictionary[i]], i)
+        separate_dataset[i] = separate_dataset[i].replace([dictionary[i]], 1)
         t, x = generate_matrix(separate_dataset[i])
 
         test_data = separate_dataset[i][40:]
